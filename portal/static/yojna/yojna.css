@@ -1,0 +1,204 @@
+
+body{
+  font-family: "Lato", sans-serif;
+  background-image: url('/static/yojna/farmer.jpg');
+ /* height: 980px;*/
+  background-blend-mode: "screen"
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  flex-wrap: wrap;
+}
+
+body.has-overlay::before {
+    content: "";
+    display: block;
+    position: fixed;
+    padding: 100px 0;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.3);
+}
+
+section {
+    margin-left: 0;
+    position: relative;
+    z-index: 1;
+}
+
+  
+/*p{
+  background:white;
+  border-radius: 8px;
+  padding: 1px 3px 1px 3px;
+}
+*/
+
+
+.container{
+  margin-top: 60px;
+  margin-bottom:80px;
+}
+
+.right-content{
+
+  margin-top:40px;
+  margin-right: 10px;
+}
+
+.card-img-top{
+  width: 358px;
+  height:200px;
+
+}
+.details{
+  color:green;
+  font-weight: 200;  
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.card-text{
+  text-align:center;
+  font-size:16px;
+  display:inline-block;
+}
+
+.row-space{
+  height:30px;
+}
+
+.card-footer{
+  text-align:center;
+}
+
+footer{
+  height:100px;
+  background: transparent;
+  text-align:center;
+  padding-top: 30px;
+  }
+
+
+/*body{
+  background-color: #f2f2f2;
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #313131;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+}*/
+
+/* Remove dark-nav class from nav tag to see the light version  */
+
+/*header {
+  height: 100vh;
+}*/
+.container1:after, .container1:before {
+  content: "";
+  display: block;
+  clear: both;
+
+}
+
+/* Start navbar */
+.nav {
+  margin-left:0px;
+  background-color: #000;
+  border-bottom: 1px solid #ececec;
+  min-height: 50px;
+  height: auto;
+}
+.nav .nav-heading {float: center}
+
+
+.nav .nav-heading > a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 60px;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+
+/*.nav .list {
+
+  float: center;
+  margin: 0;
+}*/
+
+.nav ul {
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav .list > li {
+ 
+  /*float: left;*/
+  margin-left: 140px;
+  margin-right:100px;
+  margin-bottom:30px;
+  list-style: none;
+}
+
+
+.nav .list > li > a {
+ 
+  color: #fff;
+  transition: background-color .2s, color .2s;
+
+  text-decoration: none;
+  display: block;
+
+   padding:12px;
+  line-height:1;
+
+}
+
+
+
+.nav .list > li > a:hover,
+.nav .list > li.active > a:focus {
+ 
+  background-color: #fff;
+  color: #000;
+}
+
+
+.show {
+  display: block
+}
+
+/* End sub dropdown menu */
+
+
+/* Start media query for navbar */
+@media (max-width: 767px) {
+  .nav .container1 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .nav .nav-heading {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid #e7e7e7
+  }
+  .nav .nav-heading .brand {
+    float: center}
+
+
+
+
